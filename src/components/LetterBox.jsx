@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 function LetterBox({ letter, green, yellow, isDarkMode, grey }) {
-  // Define different animations for each feedback type
   const animations = green
     ? { scale: [1, 1.2, 1], transition: { duration: 0.3, ease: "easeInOut" } } // Bounce effect
     : yellow
