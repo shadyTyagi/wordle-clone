@@ -45,6 +45,7 @@ function App() {
 
     if (currentWord !== correctWord && wordCount === TOTAL_GUESSES - 1) {
       setGameOver(true);
+      setGameStatus("lost");
       return;
     }
 
