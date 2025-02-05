@@ -20,10 +20,6 @@ function App() {
   const [gameStatus, setGameStatus] = useState("playing");
 
   function fetchWord() {
-    // const response = await axios.get(
-    //   "https://api.datamuse.com/words?sp=?????&max=1000"
-    // );
-    // const words = response.data;
     const randomIndex = Math.floor(Math.random() * words.length);
     const word = words[randomIndex];
     console.log(word);
@@ -142,7 +138,6 @@ function App() {
         isDarkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
-      {/* Dark Mode Toggle Button */}
       <div className="absolute top-4 right-4">
         <button
           onClick={toggleDarkMode}
@@ -154,7 +149,6 @@ function App() {
         </button>
       </div>
 
-      {/* Game Title */}
       <span
         className={`text-4xl sm:text-6xl md:text-8xl font-extrabold mb-4 sm:mb-8 ${
           isDarkMode ? "text-white" : "text-black"
